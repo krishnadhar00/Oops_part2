@@ -1,0 +1,23 @@
+1. In 1980's procedural programming came into picture. It is very famous at that time.
+
+2. At that time they are only focusing on solving the mathematical problems and stastical problem they are not focusing on solving the real world problems thats why oops concept came into picture in 2000's.
+
+3. Procedural Programming :- 
+    i) In this programming programs are divided into parts called functions.
+    ii) It doesn't able to solve the real world problems.
+    iii) Also called functional paradigm.
+    iv) It doesn't support data hiding , inherutance etc. it is less secure.
+    v) No access specifiers like public, private and protected.
+    vi) Code reusability is not possible. except function.
+    vii) eg:-  C,fortran,basic
+
+4. Object Oriented Programming :-
+    i) In this programming programs are divided into parts called object.
+    ii) It basically deals with class and objects.
+    iii) It's aims to solve the real world problems.
+    iv) It is more secure as it contains data hididng, inheritance and many more.
+    v) access specifiers is also present in this programming.
+    vi) It is used for making large and complex problems.
+    vii) Code reusability is also present in this programming
+    viii) eg:- c++,c#,python,java,javascript.
+    ix) With the help of object we can easily solve the real world problems.
