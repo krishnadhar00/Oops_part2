@@ -1,0 +1,52 @@
+Abstraction:
+    i) Most essential and important features of oops.
+    ii) Abstraction means diplaying only the essential features and hiding the irrelevant or unnecessary data or details.
+    iii) Improve the security because hiding the important details and displaying only those details whatever details is required for customers.
+    iv) Make the life of customer easy.
+    v) Loosly coupled application loosly coupled means if tesla wants to do some changes then it just update the version in application not individually in all the cars. (Improvised the system without impacting the customer. like software update in mobile)
+
+Real Life example:
+    i) Let say a man is driving a car so man only knows that while pressing the acceleration the speed of the car get increased as it is while applying the brakes will stop car but the man doesn't know about the internal mechanism of the car or the implementation of acceleration or brakes that how it's actually working.
+
+    ii) Lets talk about the tesla car 80% is software but we don't know the how intyernal schema is working how picture detection is working how brakes are working so we just know the relevant details not the unnecessary data.
+
+Note: 
+0. In c++ abstraction can be possible using classes i.e access specifiers like public,private,and protected. with the help of this we can easily decide which data/details is required to display to the world and which is not.Say, the members that define the internal implementation can be marked as private in a class. And the important information needed to be given to the outside world can be marked as public.  And another way to define abstraction in c++ is header file like we use pow but for using pow we use math.h header file and using pow we don't know the internal schema how pow is working.
+
+1. In java abstraction is possible using abstract class and through interface .
+2. In the case of abstract class we will use extends keywords and in the case of interface we use implements keywords.
+abstract class have also abstract methods.
+3. Abstraction derived from abstract keyword which means summary.
+
+code:
+
+#include <iostream>
+using namespace std;
+ 
+class implementAbstraction {
+private:
+    int a, b;
+ 
+public:
+    // method to set values of
+    // private members
+    void set(int x, int y)
+    {
+        a = x;
+        b = y;
+    }
+ 
+    void display()
+    {
+        cout << "a = " << a << endl;
+        cout << "b = " << b << endl;
+    }
+};
+ 
+int main()
+{
+    implementAbstraction obj;
+    obj.set(10, 20);
+    obj.display();
+    return 0;
+}
