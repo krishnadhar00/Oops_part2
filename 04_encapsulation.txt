@@ -1,0 +1,59 @@
+Encapsulation :
+    i) Wrapping up the data and information under a single unit.
+    ii) Binding the method and data together.
+    iii) Also hides the data.
+    iv) No one should be allowed to change the state directly
+    v) Acheived through private and getter and setter
+    vi) Data is only accesible from the class methods.
+
+Real Life Example :
+    i) in a company, there are different sections like the accounts section, finance section, sales section, etc. The finance section handles all the financial transactions and keeps records of all the data related to finance. Similarly, the sales section handles all the sales-related activities and keeps records of all the sales.so sales section cannot access the details of the finance section he have to request to access the info.
+    the data of any of the sections like sales, finance, or accounts are hidden from any other section.and wrapped under a single unit. so encapsulation lead to data hiding or data abstraction.
+
+Note :
+    1. In encapsulation we use the private access specifier for not accessing the data directly so we use getter and setter to access the data . setter is used to set the values of private data and getter is used to get or display the details of the private data.
+    
+code :
+
+#include <iostream>
+#include <string>
+ 
+using namespace std;
+ 
+class Person {
+  private:
+    string name;
+    int age;
+  public:
+    Person(string name, int age) {
+      this->name = name;
+      this->age = age;
+    }
+    void setName(string name) { //setter
+      this->name = name;
+    }
+    string getName() {  // getter
+      return name;
+    }
+    void setAge(int age) {
+      this->age = age;
+    }
+    int getAge() {
+      return age;
+    }
+};
+ 
+int main() {
+  Person person("John Doe", 30);
+ 
+  cout << "Name: " << person.getName() << endl;
+  cout << "Age: " << person.getAge() << endl;
+ 
+  person.setName("Jane Doe");
+  person.setAge(32);
+ 
+  cout << "Name: " << person.getName() << endl;
+  cout << "Age: " << person.getAge() << endl;
+ 
+  return 0;
+}
