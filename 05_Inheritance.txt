@@ -1,0 +1,54 @@
+Inheritance :
+    i) The capability of a class to inherit the properties and charcaterstic from another class is known as inheritance.
+    ii) Base class : The class whoose properties are inherited by sub class is called base class. or
+    parent class or super class.
+    iii) Derived class : The class who inherit the properties from parent class is known as derived class or child class or sub class.
+    iv) It supports the concept of reusability. avoid redundancy, less loc and less time.
+    v) It has (is a) relation. like dog is a child of animal.
+    vi) Represents the parent-child relationship.
+
+Modes of Inheritance :
+    i) public mode 
+    ii) private mode
+    iii) protected mode
+
+Example :
+    i) Animal is a base class and dog,cat,cow is derved from base class known as derived class.
+    ii) all the properties are Inherited from my dad. properties like money, genes, education
+
+code in c++ :
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+// Base class
+class Parent {
+public:
+    int id_p;
+};
+ 
+// Sub class inheriting from Base Class(Parent)
+class Child : public Parent {    // In case of java we use exyends keywords for accesing the data.
+public:
+    int id_c;
+};
+ 
+// main function
+int main()
+{
+    Child obj1;
+ 
+    // An object of class child has all data members
+    // and member functions of class parent
+    obj1.id_c = 7;
+    obj1.id_p = 91;
+    cout << "Child id is: " << obj1.id_c << '\n';
+    cout << "Parent id is: " << obj1.id_p << '\n';
+ 
+    return 0;
+}
+
+In java :
+extends are used for classes and implements keyword is used for interface to inherit the propwerties.
+In c++ :
+we use access specifiers for inheriting tne properties.
