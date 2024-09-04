@@ -1,0 +1,54 @@
+1. Single Inheritance :
+    A class is allowed to inherit the properties from only one class is called single inheritnace.
+    eg. class A : public B
+
+2. Multiple inheritance :
+    A child can be derived from more than one base or parent class i.e one derived class and more than one base class. 
+    eg. class A (child class): public B, public C (parent class)
+Note : Multiple inhertnace is not allowed in java but it can be possible using interface by using implements keywords. multiple inheritnace through interface is possible in java. 
+
+3. Multilevel Inheritance :
+    In this inheritance, a derived class is created from derived class. It is derived in level wise.
+    class A{} ,class B: public A{} ,class c: public B (level wise)
+
+4. Heirarchical Inheritance :
+    In this, more than one sub class is inherited from one base class. i.e more than one derived class is created from one single base class.
+    eg. class A{}, class B: public A{}, Class C: public A{}, class D: public A (one base and more than one derived)
+
+5. Hybrid Inheritance :
+    It comprises of more than one inheritnace. 
+    combination of Heirarchical and multiple inheritance.
+
+6. Diamond Problems :
+    The Diamond Problem is an ambiguity error that arises in multiple inheritance when a derived class inherits from two or more base classes that share a common ancestor. This results in the inheritance hierarchy forming a diamond shape, hence the name “Diamond Problem.
+
+7. Sollution to the diamond problem :
+    This problem can be solved using Virtual Inheritance.. Virtual inheritance ensures that there is only one instance of the common base class, eliminating the ambiguity.
+    Or just renaming conflicting methods,
+
+class Base {
+    public:
+        void fun() { cout << "Base" << endl; }
+    };
+
+    // Parent class 1 with virtual inheritance
+    class Parent1 : virtual public Base {
+    public:
+    };
+
+    // Parent class 2 with virtual inheritance
+    class Parent2 : virtual public Base {
+    public:
+    };
+
+    // Child class inheriting from both Parent1 and Parent2
+    class Child : public Parent1, public Parent2 {
+    };
+
+
+int main()
+{
+    Child* obj = new Child();
+    obj->fun(); // No ambiguity due to virtual inheritance
+   return 0;
+}
