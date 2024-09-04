@@ -1,0 +1,33 @@
+Polymorphism :
+    i) Poly means many and morphism means many forms.
+    ii) Means having many forms.
+    iii) the ability of message to be displayed in more than one forms.
+
+real life example :
+A man at a same time can be a father , can be a husband, can be an employee in company and can be a child.same person possesses different behavior
+
+Types of Polymorphism :
+1. Compile time polymorphism / static binding / early binding
+    i) compile time polymorphism : can be acheived by function/method overloading or operator overloading.Also called early binding
+    a) Function overloading : 
+        1. When there are multiple functions with the same name but different parameters, different data types and same parameter but different data types then the functions are said to be overloaded, hence this is known as Function Overloading
+        2. We cannot overload the method by just changing the return type like we can do that one add function have int return type and another add function have void return type and parameter is same so it will throw an error.
+    
+    b) operator overloading:
+        1. C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading. For example, we can make use of the addition operator (+) for string class to concatenate two strings. We know that the task of this operator is to add two operands. So a single operator ‘+’, when placed between integer operands, adds them and when placed between string operands, concatenates them. 
+
+2. Runtime Polymorphism / dynamic binding / late binding
+    i) Runtime polymorphism can be acheived through function overriding. Also called late binding.
+    The function call is resolved at runtime so it is called as runtime polymorphism.
+
+    ii) Function/method overriding : Method overriding can be acheive through inheritance.
+    It occurs when a derived class has a definition for one of the member functions of the base class.
+    When parent have same method and same argument and child have also same method and same argument then it is method overriding.
+    So whenever we make object of base class or child class and accessing the value it always give the value of base/parent class because same function is getting set by the compiler which is in the base class. So here come virtual function into the pictiure.
+
+    Virtual Function : Just use this function before the function name in the base class and then accessing the value it will give the child class value. Through referencing we have to call the function.
+    Virtual function resolve the error at runtime.
+
+Note :
+Most of the time we use the polymorpihsm for the method signature we use in the return type we use in the arguments. 
+    
