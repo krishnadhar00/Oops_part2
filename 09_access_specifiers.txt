@@ -1,0 +1,19 @@
+Three types of access modifiers :
+
+1. Public : 
+    1. If data and function is under the public then they can be accessible from anywhere.
+
+2. Protected :
+    1. if data and fucntion are insdie the protected class then they can be accessible in own base class and derived class.
+    2. We cannot directly acces the value of proteted from main class we have to make the setter function to acces the value. and that function can be in base class or child clas.
+    3. Protected is same as private only differneec is that we can acces the function in base as well as child class but in case of private we can only acces in own class.
+
+3. Private :
+    1.  They are by defualt private.
+    2. They are accessible only in own class
+
+
+4. Friend Function :
+    It is a non member function which can access private member of the class.
+
+5. A copy constructor is a type of constructor that initializes an object using another object of the same class.
