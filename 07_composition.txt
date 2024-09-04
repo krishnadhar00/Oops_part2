@@ -1,0 +1,23 @@
+Composition :
+    i) It (has a) relationship.
+    ii) Both entities are dependent on each other.
+    iii) One entity cannot exists without another entity.
+    iv) It allows the reuse of code
+    v) In java we can acheive multiple inheritance using composition.
+
+Real Life example :
+    If there is a library and in library there is a books so if library get destroyed then all the book also get destroyed and if boook are not there then it's not a library so both entities are dependent on each other.
+    For example, a file containing in a folder, if the folder deletes all files inside will be deleted. The file can not exist without a folder.
+
+Association :
+    It can be one to one , one to many , many to one and many to many relationship. 
+    composition and aggregation are two forms of Association
+
+aggregation :
+    It also has a relationship
+    It is a unidirectional Association.
+    Both entities are independent on each other.
+
+real life example :
+    For example, a department can have students but vice versa is not possible and thus unidirectional in nature.
+    For example, the relationship between a student and a department. The student may exist without a department.
